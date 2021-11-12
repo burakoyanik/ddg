@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dilara Dalgıç Görücü</title>
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!-- İcon -->
+	<link rel="shortcut icon" href="assets/img/ddg.ico" type="image/x-icon">
+	<link rel="icon" href="assets/img/ddg.ico" type="image/x-icon">
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+<style>
+	::-webkit-scrollbar {
+    display: none;
+	}
+</style>
+<body>
+  <div class="header">
+    <a class="logoLink" href="index.html"><img class="logo" src="assets/img/ddg.png"></a>
+    <ul>
+      <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+      <li><a>HİZMETLERİMİZ</a>
+        <ul>
+          <li><a href="yetiskin.html">Yetişkin Beslenmesi</a><p>></p>
+            <ul>
+              <li><a href="yetiskin.html">Ağırlık Yönetimi Programı</a></li>
+              <li><a href="yetiskin.html">Özel Durum Beslenme Programı</a></li>
+              <li><a href="yetiskin.html">Hastalıklara Yönelik Beslenme Programı</a></li>
+            </ul>
+          </li>
+          <li><a href="annecocuk.html">Anne ve Çocuk Beslenmesi</a><p>></p>
+            <ul>
+              <li><a href="annecocuk.html">Emzirme Dönemi Beslenme Uygulamaları</a></li>
+              <li><a href="annecocuk.html">Ek Gıda Dönemi Bebek Beslenmesi</a></li>
+              <li><a href="annecocuk.html">Okul Öncesi ve Okul Çağı Çocuk Beslenmesi</a></li>
+              <li><a href="annecocuk.html">Hamile Beslenmesi</a><p></p></li>
+            </ul>
+          </li>
+          <li><a href="kurumsal.html">Kurumsal Beslenme</a><p>></p>
+            <ul>
+              <li><a href="kurumsal.html">Menü Danışmanlığı</a></li>
+              <li><a href="kurumsal.html">Kurumsal Wellness</a></li>
+              <li><a href="kurumsal.html">Sağlıklı Beslenme Seminerleri</a></li>
+              <li><a href="kurumsal.html">Beslenme Atölyeleri</a></li>
+              <li><a href="kurumsal.html">Cafe-Restaurant Danışmanlığı</a></li>
+            </ul>
+          </li>
+          <li><a href="onlinediyet.html">Online Diyet</a><p></p>
+          </li>
+        </ul>
+      </li>
+      <li><a class="active">BESLENME KILAVUZU</a>
+        <ul>
+          <li><a href="bedenkutle.html">Beden Kütle Endeksi Hesaplama</a><p>></p></li>
+          <li><a href="bazal.html">Bazal Metabolizma Hızı Hesaplama</a><p>></p></li>
+          <li><a href="tarifler.html">Tarifler</a><p>></p></li>
+          <li><a href="blog.html">Blog</a><p>></p></li>
+        </ul>
+      </li>
+      <li><a href="basin.html">BASIN</a></li>
+      <li><a href="contact.html">İLETİŞİM</a></li>
+    </ul>
+    <a href="onlinediyet.html"><img class="online" src="assets/img/onlinediyet.png"></a>
+  </div>
+
+  <div class="calculationArea">
+    <div class="calculationHeaderText">
+      <p>Beslenme Kılavuzu / <strong>Hesaplamalar</strong></p>
+    </div>
+    <div class="calculationTopImg">
+      <img src="assets/img/bm.png">
+    </div>
+    <div class="calculationCenterArea">
+      <h1>BEDEN KÜTLE ENDEKSİ HESAPLAMA</h1>
+      <div class="calcArea">
+        <div class="calcColumn">
+          <p>BOY (CM): </p>
+          <input type="text" name="boy" id="boy" required>
+        </div>
+        <div class="calcColumn">
+          <p>KİLO: </p>
+          <input type="text" name="kilo" id="kilo" required>
+        </div>
+        <div class="calcColumn">
+          <p>YAŞ: </p>
+          <input type="text" name="yas" id="yas" required>
+        </div>
+      </div>
+      <div onclick="calculate()" class="calcSubmitButton">
+        <p>HESAPLA</p>
+      </div>
+    </div>
+    <div class="calculationValueArea" id="resultTable">
+      <p id="calcValue">Beden Kütle Endeksiniz:</p>
+      <div class="valueTableArea">
+        <div class="valueTableAreaColumn">
+          <div class="valueTableRow">
+            <p><strong>BEDEN KÜTLE ENDEKSİ DEĞERİ</strong></p>
+          </div>
+          <div class="valueTableRow">
+            <p>16,5 kg/m2 altında ise</p>            
+          </div>
+          <div class="valueTableRow">
+            <p>16.6 - 18.5 kg/m2 aralığında ise</p>    
+          </div>
+          <div class="valueTableRow">
+            <p>18.6 - 24.9 kg/m2 aralığında ise</p>    
+          </div>
+          <div class="valueTableRow">
+            <p>25 - 29.9 kg/m2 aralığında ise</p>    
+          </div>
+          <div class="valueTableRow">
+            <p>30 - 34.9 kg/m2 aralığında ise</p>    
+          </div>
+          <div class="valueTableRow">
+            <p>35 - 39.9 kg/m2 aralığında ise</p>    
+          </div>
+          <div class="valueTableRow">
+            <p>40 kg/m2 üzerinde ise</p>    
+          </div>
+        </div>
+        <div class="valueTableAreaColumn">
+          <div class="valueTableRow">
+            <p><strong>DURUMUNUZ</strong></p>            
+          </div>
+          <div class="valueTableRow">
+            <p>Ciddi derecede zayıf</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>Zayıf</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>Normal kilolu</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>Hafif şişman (fazla kilolu)</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>I.Derece obezite</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>II.Derece obezite</p>  
+          </div>
+          <div class="valueTableRow">
+            <p>III.Derece obezite</p>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="background-image: url('assets/img/aboutFooterBg.png'); background-color:transparent; margin-top:-17vh;">
+    <div class="footerTop">
+      <div class="footerNavArea">
+        <div class="footerColumn">
+          <a href="#">HİZMETLERİMİZ</a>
+          <a href="#" style="margin-top: 2vh;">Yetişkin Beslenmesi</a>
+          <a href="#">Anne Çocuk Beslenmesi</a>
+          <a href="#">Kurumsal Beslenme</a>
+          <a href="#">Online Diyet</a>          
+        </div>
+        <div class="footerColumn">
+          <a href="#">HAKKIMIZDA</a>
+        </div>
+        <div class="footerColumn">
+          <a href="#">BESLENME KILAVUZU</a>
+        </div>
+        <div class="footerColumn">
+          <a href="#">BASIN</a>
+        </div>          
+      </div>
+      <div class="footerSocialArea">
+        <a href="#"><img src="assets/img/instagram.png"></a>
+        <a href="#"><img src="assets/img/pinterest.png"></a>
+        <a href="#"><img src="assets/img/youtube.png"></a>
+      </div>         
+    </div>
+    <div class="footerBottom">
+      <a href="#'">diyetisyendilandalgic.com</a> 
+    </div>
+  </div>
+
+<script>
+  function calculate() {
+    var boy = document.getElementById("boy").value;
+    var kilo = document.getElementById("kilo").value;
+    var yas = document.getElementById("yas").value;
+    var boyresult;
+    boyresult = boy/100;
+    var result = kilo/((boy/100)*2);
+    var n = result.toFixed(2);
+    if (boyresult < 1) {
+      document.getElementById("calcValue").innerHTML = "Boyunuzu Lüten cm Cinsinden Giriniz";
+      document.getElementById("resultTable").style.display = "flex";
+    }
+    else{
+      document.getElementById("calcValue").innerHTML = "Beden Kütle Endeksiniz: <strong>" + n + "</strong>";
+      document.getElementById("resultTable").style.display = "flex";      
+    }
+  }
+</script>
+</body>
